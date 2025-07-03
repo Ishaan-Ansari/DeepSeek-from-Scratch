@@ -1,6 +1,3 @@
-# DeepSeek-from-Scratch
-This repository contains an ongoing implementation of DeepSeek from scratch. Currently, it focuses on building core components such as Multi-Head Latent Attention (MLA) — a memory-efficient alternative to standard Multi-Head Attention, used in models like DeepSeek-V2/V3. 
-
 ## Overview
 
 Multi-Head Latent Attention (MLA) improves over standard Multi-Head Attention (MHA) by introducing a shared **latent representation** for Key and Value projections. Instead of storing separate key and value tensors for each head, MLA caches a compressed latent vector that is later projected to keys and values — reducing the Key-Value (KV) cache size while preserving per-head expressiveness.
